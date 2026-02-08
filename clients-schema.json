@@ -1,0 +1,98 @@
+{
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "integer"
+            },
+            "name": {
+                "type": "string"
+            },
+            "age":{
+                "type": "integer",
+                "minimum": 0
+            },
+            "loyalty_level": {
+                "type": "string",
+                "enum": ["standard", "gold", "platinum"]
+            },
+            "active": {
+                "type": "boolean"
+            },
+            "joined": {
+                "type": "string",
+                "format": "date"
+            },
+            "contact": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "format": "email"
+                    },
+                    "phone": {
+                        "type": "string"
+                    }
+                }
+            },
+            "address": {
+                "type": "object",
+                "properties": {
+                    "city": {
+                        "type": "string"
+                    },
+                    "country": {
+                        "type": "string"
+                    },
+                    "postal_code": {
+                        "type": "string"
+                    }
+                }
+            },
+            "preferred_store": {
+                "type": "object",
+                "properties": {
+                    "brand": {
+                        "type": "string"
+                    },
+                    "location": {
+                        "type": "string"
+                    }
+                }
+            },
+            "purchases": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "date": {
+                            "type": "string",
+                            "format": "date"
+                        },
+                        "store": {
+                            "type": "string"
+                        },
+                        "basket": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "product": "string",
+                                    "category": "string",
+                                    "quantity": {
+                                        "type": "integer",
+                                        "minimum": 0
+                                    },
+                                    "price": "number"
+                                }
+                            }
+                        },
+                        "lifetime_spend": "number"
+                    }
+
+                }
+            }
+        }
+    }
+}
