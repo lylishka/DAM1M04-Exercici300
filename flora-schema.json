@@ -1,0 +1,64 @@
+{
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "common_name": "string",
+            "scientific_name": "string",
+            "continent": "string",
+            "native_range": {
+                "type": "object",
+                "properities":
+                {
+                    "countries": {
+                        "type": "array",
+                        "items": {
+                           "type": "string"
+                        }
+                    },
+                    "biomes": {
+                        "type": "array",
+                        "items": {
+                           "type": "string"
+                    
+                        }
+                    }
+                }
+            },
+            "plant_type": "string",
+            "average_height_m": {
+                "type": "integer",
+                "minimum": 0
+            },
+            "conservation_status": {
+                "type": "string",
+                "enum": ["Endangered", "Least Concern", "Near Threatened"]
+            },
+            "traits": {
+                "type": "object",
+                "properities": {
+                    "leaf_type": "string",
+                    "notable_features": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+                
+            },
+            "ecological_role": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "human_uses": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
