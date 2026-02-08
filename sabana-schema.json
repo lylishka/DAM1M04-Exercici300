@@ -2,7 +2,7 @@
     "type": "array",
     "items": {
         "type": "object",
-        "properities": {
+        "properties": {
             "common_name": {
                 "type": "string"
             },
@@ -25,7 +25,7 @@
             },
             "habitat": {
                 "type": "object",
-                "properities": {
+                "properties": {
                     "biome": {
                         "type": "string"
                     },
@@ -45,7 +45,7 @@
             },
             "diet": {
                 "type": "object",
-                "properities": {
+                "properties": {
                     "type": {
                         "type": "string",
                         "enum": ["herbivore", "carnivore"]
@@ -60,7 +60,7 @@
             },
             "population_estimate": {
                 "type": "object",
-                "properities": {
+                "properties": {
                     "value": {
                         "type": "string"
                     },

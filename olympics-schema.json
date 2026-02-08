@@ -2,7 +2,7 @@
     "type": "array",
     "items": {
         "type": "object",
-        "properities": {
+        "properties": {
             "event": {
                 "type": "string"
             },
@@ -15,7 +15,7 @@
             },
             "record": {
                 "type": "object",
-                "properities": {
+                "ppropertiess": {
                     "value": {
                         "type": "number"
                     },
@@ -34,7 +34,7 @@
             },
             "athlete": {
                 "type": "object",
-                "properities": {
+                "properties": {
                     "name": {
                         "type": "string"
                     },
@@ -45,7 +45,7 @@
             },
             "games": {
                 "type": "object",
-                "properities": {
+                "properties": {
                     "year": {
                         "type": "integer"
                     },

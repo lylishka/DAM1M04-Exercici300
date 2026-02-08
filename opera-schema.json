@@ -2,13 +2,13 @@
     "type": "array",
     "items": {
         "type": "object",
-        "properities": {
+        "properties": {
             "title": {
                 "type": "string"
             },
             "composer": {
                 "type": "object",
-                "properities": {
+                "properties": {
                     "name": {
                         "type": "string"
                     },
@@ -23,7 +23,7 @@
             },
             "premiere": {
                 "type": "object",
-                "properities": {
+                "properties": {
                     "city": {
                         "type": "string"
                     },
@@ -55,7 +55,7 @@
                 "type": "array",
                 "items": {
                     "type": "object",
-                    "properities": {
+                    "properties": {
                         "character": {
                             "type": "string"
                         },

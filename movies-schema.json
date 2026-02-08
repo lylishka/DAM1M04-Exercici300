@@ -2,7 +2,7 @@
     "type": "array",
     "items": {
         "type": "object",
-        "properities": {
+        "properties": {
             "title": "string"
         },
         "release_year": {
@@ -42,7 +42,7 @@
         "cast": {
             "type": "array",
             "items": {
-                "properities": {
+                "properties": {
                     "actor": {
                         "type": "string"
                     },
@@ -57,7 +57,7 @@
         },
         "awards": {
             "type": "object",
-            "properities": {
+            "properties": {
                 "imdb": {
                     "type": "number",
                     "minimum": 0,
