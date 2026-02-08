@@ -3,9 +3,15 @@
     "items": {
         "type": "object",
         "properties": {
-            "common_name": "string",
-            "scientific_name": "string",
-            "continent": "string",
+            "common_name": {
+                "type": "string"
+            },
+            "scientific_name": {
+                "type": "string"
+            },
+            "continent":{
+                "type": "string"
+            },
             "native_range": {
                 "type": "object",
                 "properities":
