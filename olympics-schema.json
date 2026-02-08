@@ -1,0 +1,74 @@
+{
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properities": {
+            "event": {
+                "type": "string"
+            },
+            "sport": {
+                "type": "string"
+            },
+            "category": {
+                "type": "string",
+                "enum": ["Men", "Women"]
+            },
+            "record": {
+                "type": "object",
+                "properities": {
+                    "value": {
+                        "type": "number"
+                    },
+                    "unit": {
+                        "type": "string",
+                        "enum": ["s", "m"]
+                    },
+                    "display": {
+                        "type": "string"
+                    },
+                    "set_on": {
+                        "type": "string",
+                        "form": "date"
+                    }
+                }
+            },
+            "athlete": {
+                "type": "object",
+                "properities": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "country": {
+                        "type": "string"
+                    }
+                }
+            },
+            "games": {
+                "type": "object",
+                "properities": {
+                    "year": {
+                        "type": "integer"
+                    },
+                    "host_city": {
+                        "type": "string"
+                    },
+                    "season": {
+                        "type": "string"
+                    }
+                }
+            },
+            "venue": {
+                "type": "string"
+            },
+            "status": {
+                "type": "string"
+            },
+            "wind": {
+                "type": "number"
+            },
+            "notes": {
+                "type": "string"
+            }
+        }
+    }
+}

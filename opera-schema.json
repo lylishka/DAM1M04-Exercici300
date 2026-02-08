@@ -1,0 +1,77 @@
+{
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properities": {
+            "title": {
+                "type": "string"
+            },
+            "composer": {
+                "type": "object",
+                "properities": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "period": {
+                        "type": "string",
+                        "enum": ["Romantic", "Late Romantic", "Classical"]
+                    }
+                }
+            },
+            "librettist": {
+                "type": "string"
+            },
+            "premiere": {
+                "type": "object",
+                "properities": {
+                    "city": {
+                        "type": "string"
+                    },
+                    "venue": {
+                        "type": "string"
+                    },
+                    "date": {
+                        "type": "string",
+                        "format": "date"
+                    }
+                }
+            },
+            "language": {
+                "type": "string"
+            },
+            "duration_min": {
+                "type": "integer"
+            },
+            "act_count": {
+                "type": "integer"
+            },
+            "notable_aroas": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "lead_roles": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properities": {
+                        "character": {
+                            "type": "string"
+                        },
+                        "voice_type": {
+                            "type": "string",
+                            "enum": ["soprano", "tenor", "baritone", "mezzo-soprano", "bass", "bass-baritone"]
+                        }
+                    }
+                }
+            },
+            "themes": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
