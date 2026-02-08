@@ -31,7 +31,9 @@
                     }
                 }
             },
-            "plant_type": "string",
+            "plant_type": {
+                "type": "string"
+            },
             "average_height_m": {
                 "type": "integer",
                 "minimum": 0
@@ -43,7 +45,9 @@
             "traits": {
                 "type": "object",
                 "properties": {
-                    "leaf_type": "string",
+                    "leaf_type": {
+                        "type": "string"
+                    },
                     "notable_features": {
                         "type": "array",
                         "items": {
@@ -51,7 +55,6 @@
                         }
                     }
                 }
-                
             },
             "ecological_role": {
                 "type": "array",

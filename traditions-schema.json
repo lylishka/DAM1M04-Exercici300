@@ -7,16 +7,16 @@
                 "type": "string"
             },
             "location": {
-                "type": "strign"
+                "type": "string"
             },
             "time_of_year": {
                 "type": "object",
                 "properties": {
                     "month": {
-                        "type": "strign"
+                        "type": "string"
                     },
                     "multi_day": {
-                        "type:": "boolean"
+                        "type": "boolean"
                     }
                 }
             },

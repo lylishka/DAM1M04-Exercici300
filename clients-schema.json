@@ -4,7 +4,7 @@
         "type": "object",
         "properties": {
             "id": {
-                "type": "integer"
+                "type": "string"
             },
             "name": {
                 "type": "string"
@@ -78,17 +78,25 @@
                             "items": {
                                 "type": "object",
                                 "properties": {
-                                    "product": "string",
-                                    "category": "string",
+                                    "product": {
+                                        "type": "string"
+                                    },
+                                    "category": {
+                                        "type": "string"
+                                    },
                                     "quantity": {
                                         "type": "integer",
                                         "minimum": 0
                                     },
-                                    "price": "number"
+                                    "price": {
+                                        "type": "number"
+                                    }
                                 }
                             }
                         },
-                        "lifetime_spend": "number"
+                        "lifetime_spend": {
+                            "type": "number"
+                        }
                     }
 
                 }
