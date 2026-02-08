@@ -1,0 +1,81 @@
+{
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properities": {
+            "common_name": {
+                "type": "string"
+            },
+            "scientific_name": {
+                "type": "string"
+            },
+            "conservation_status": {
+                "type": "string",
+                "enum": ["Vulnerable", "Endangered", "Near Threatened"]
+            },
+            "average_mass_kg": {
+                "type": "number"
+            },
+            "max_speed_kmh": {
+                "type": "number",
+                "minimum": 0
+            },
+            "social_structure": {
+                "type": "string"
+            },
+            "habitat": {
+                "type": "object",
+                "properities": {
+                    "biome": {
+                        "type": "string"
+                    },
+                    "range_countries": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "protected_areas": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "diet": {
+                "type": "object",
+                "properities": {
+                    "type": {
+                        "type": "string",
+                        "enum": ["herbivore", "carnivore"]
+                    },
+                    "primary_foods": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "population_estimate": {
+                "type": "object",
+                "properities": {
+                    "value": {
+                        "type": "string"
+                    },
+                    "primary_foods": {
+                        "type": "string"
+                    }
+                
+                }
+            },
+            "threts": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
